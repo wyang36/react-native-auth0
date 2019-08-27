@@ -48,11 +48,14 @@ repositories {
         // https://github.com/facebook/react-native/blob/0.60-stable/template/android/build.gradle#L28
         url "$projectDir/../node_modules/react-native/android"
     }
+    google()
     mavenCentral()
 }
 
 dependencies {
     implementation "com.facebook.react:react-native:${safeExtGet('reactnativeVersion', '+')}"
+    implementation "androidx.browser:browser:1.0.0"
+    implementation "androidx.annotation:annotation:1.1.0"
 }
 
 def configureReactNativePom(def pom) {
