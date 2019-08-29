@@ -128,7 +128,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example"
+        applicationId "com.auth0.react.example"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
