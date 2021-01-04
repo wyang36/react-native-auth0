@@ -470,6 +470,11 @@ export default class Auth {
    * @param {String} [parameters.username] user's username
    * @param {String} parameters.password user's password
    * @param {String} parameters.connection name of the database connection where to create the user
+   * @param {String} [parameters.given_name] user's given name
+   * @param {String} [parameters.family_name] user's family name
+   * @param {String} [parameters.name] user's full name
+   * @param {String} [parameters.nickname] user's nickname
+   * @param {String} [parameters.picture] user's picture
    * @param {String} [parameters.metadata] additional user information that will be stored in `user_metadata`
    * @returns {Promise}
    *
@@ -483,6 +488,11 @@ export default class Auth {
           password: {required: true},
           connection: {required: true},
           username: {required: false},
+          given_name: {required: false},
+          family_name: {required: false},
+          name: {required: false},
+          nickname: {required: false},
+          picture: {required: false},
           metadata: {required: false, toName: 'user_metadata'},
         },
       },
